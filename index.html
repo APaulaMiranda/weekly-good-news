@@ -56,6 +56,7 @@
   .intro{
     margin:0 auto; max-width:52ch; color:var(--dim); font-size:15.5px; line-height:1.65;
   }
+  .intro + .intro{margin-top:14px}
   .intro a{color:var(--accent); font-weight:600; text-decoration:none; border-bottom:1px solid currentColor}
   .intro a:hover{opacity:.75}
 
@@ -63,6 +64,7 @@
     max-width:880px; margin:0 auto; padding:36px 24px 96px;
     display:grid; grid-template-columns:180px 1fr; gap:40px; align-items:start;
   }
+  .layout > *{min-width:0}
 
   .archive{position:sticky; top:24px}
   .archive p{
@@ -106,6 +108,7 @@
   .icon-badge.leaf{background:color-mix(in srgb, var(--leaf) 16%, transparent)}
   .icon-badge svg{width:24px;height:24px;color:var(--accent)}
   .icon-badge.leaf svg{color:var(--leaf)}
+  .card-body{flex:1; min-width:0}
   .card-body p{margin:0; font-size:15px; line-height:1.6}
   .card-body strong{font-weight:700}
   .card-body a{
@@ -145,11 +148,13 @@
   </svg>
   <p class="eyebrow">Weekly Good News</p>
   <h1>Some of the world's best moments, every week</h1>
-  <p class="intro">A weekly summary of some of the main positive news from around
-    the world. The news cycle loves doom and gloom, so think of this as its fun,
-    feel-good cousin. These stories are gathered by an AI agent that
+  <p class="intro">A weekly summary of some of the main positive news from around the
+    world — because good news should be mainstream news too.</p>
+  <p class="intro">These stories are gathered by an AI agent that
     <a href="https://www.linkedin.com/in/apmiranda/" target="_blank" rel="noopener">Ana Paula</a>
-    created using Claude Code. Pick a week on the left to browse the archive.</p>
+    built using Claude Code. Every Monday at 8am CET, it goes looking for what's
+    genuinely good and publishes a new entry here.</p>
+  <p class="intro">Pick a week from the archive to browse.</p>
 </header>
 
 <div class="layout">
